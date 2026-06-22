@@ -125,17 +125,20 @@ kbd{
   .card{padding:22px 18px;}
   .question{font-size:18px;}
 }
+.home-btn{display:flex;align-items:center;justify-content:center;width:34px;height:34px;border-radius:10px;border:1.5px solid var(--line);color:var(--muted);text-decoration:none;font-size:18px;transition:border-color .15s,color .15s,background .15s;flex:none;}
+.home-btn:hover{border-color:var(--accent);color:var(--accent);background:var(--chip);}
 </style>
 </head>
 <body>
 <div class="wrap">
   <header class="top">
+    <a class="home-btn" href="index.html" title="回首頁">&#8592;</a>
     <div class="title" id="quizTitle">標籤題庫練習</div>
     <div class="counter" id="counter"></div>
   </header>
   <div class="bar"><i id="barFill"></i></div>
   <div id="stage"></div>
-  <div class="footer">互動題庫練習 ｜ 主動回想模式</div>
+  <div class="footer">互動題庫練習 ｜ 主動回想模式 ｜ v1.1</div>
 </div>
 
 <script id="quizData" type="application/json">{"title": "標籤題庫練習", "questions": [{"id": 1, "type": "qa", "question": "熱收縮膜標籤主要為哪三種？", "options": null, "explanation": "", "answer": "OPS、PET、PVC"}, {"id": 2, "type": "qa", "question": "我司集合式包材除了LDPE單層膜之外還有哪個加強功能後的產物？", "options": null, "explanation": "", "answer": "五層膜"}, {"id": 3, "type": "qa", "question": "低中高收縮膜主要是以何者為判定？", "options": null, "explanation": "", "answer": "橫向收縮率"}, {"id": 4, "type": "qa", "question": "以下收縮率何者為低收縮膜？四十七％、五十三％、六十一％、七十二％", "options": null, "explanation": "", "answer": "五十三％"}, {"id": 5, "type": "qa", "question": "標籤生產流程：入料、X、分條、Y、檢驗、切片，X與Y分別為何？", "options": null, "explanation": "", "answer": "X為印刷、Y為合掌"}, {"id": 6, "type": "qa", "question": "背膠在哪一站製作？", "options": null, "explanation": "", "answer": "印刷"}, {"id": 7, "type": "qa", "question": "縱向易撕線在哪一站製作？", "options": null, "explanation": "", "answer": "合掌"}, {"id": 8, "type": "qa", "question": "我司目前兩台印刷機為何種印刷機？", "options": null, "explanation": "", "answer": "凹版印刷機"}, {"id": 9, "type": "qa", "question": "我司目前兩台印刷機分別為幾色？", "options": null, "explanation": "", "answer": "八色與十色"}, {"id": 10, "type": "qa", "question": "什麼情況下需要在產線上做切片？", "options": null, "explanation": "", "answer": "客戶需要手工套標時"}, {"id": 11, "type": "qa", "question": "色差儀定義顏色在甚麼座標上？", "options": null, "explanation": "", "answer": "Lab座標"}, {"id": 12, "type": "qa", "question": "色差儀用什麼來定義色差大小？", "options": null, "explanation": "", "answer": "ΔE"}, {"id": 13, "type": "qa", "question": "色彩座標中定義黑白的座標軸是哪個？", "options": null, "explanation": "", "answer": "L"}, {"id": 14, "type": "qa", "question": "色差儀又稱為？", "options": null, "explanation": "", "answer": "分光儀"}, {"id": 15, "type": "qa", "question": "若合掌強度不夠會造成甚麼問題？", "options": null, "explanation": "", "answer": "套標收縮時標籤被拉開或斷裂"}, {"id": 16, "type": "qa", "question": "合掌強度值在甚麼範圍內視為合格？", "options": null, "explanation": "", "answer": "0.5至2kgf之間"}, {"id": 17, "type": "qa", "question": "做合掌強度測試時，切成的試片寬度為何？", "options": null, "explanation": "", "answer": "三公分"}, {"id": 18, "type": "qa", "question": "做合掌拉力測試時，將標籤掛於下方定拉斷標籤之前不要忘記做什麼？", "options": null, "explanation": "", "answer": "歸零"}, {"id": 19, "type": "tf", "question": "耐皂測試是否用於茶裏王無糖綠茶標籤？", "options": null, "explanation": "", "answer": false}, {"id": 20, "type": "tf", "question": "維他露P汽水使用低收縮膜紙，做收縮率測試時得到數據如下：六十度二％、七十度二十五％、八十度四十％、九十度五十八％、一百度六十四％，請問是否符合標準？", "options": null, "explanation": "", "answer": false}, {"id": 21, "type": "qa", "question": "做收縮率測試時要將標籤膜紙放在水中多久？", "options": null, "explanation": "", "answer": "十秒"}, {"id": 22, "type": "qa", "question": "做收縮率測試之前將膜紙材切成何種尺寸？", "options": null, "explanation": "", "answer": "十乘十公分"}, {"id": 23, "type": "qa", "question": "耐皂測試將內容物塗抹均勻在表面跟滴在畫圈處分別為何種測試？", "options": null, "explanation": "", "answer": "耐浸漬、耐滴液"}, {"id": 24, "type": "qa", "question": "何者標籤應該要做耐皂測試？（可口可樂、紅標威士忌、悅氏礦泉水、花王洗髮精、舒跑、蠻牛、新奇漂白水、拿鐵、八寶粥）", "options": null, "explanation": "", "answer": "花王洗髮精跟新奇漂白水"}, {"id": 25, "type": "qa", "question": "印刷廠印製御茶園日式生茶標籤，取樣後對客戶確認過的色樣，員工A說太黃、員工B說太綠、員工C說太藍，大家無法達成共識，請問身為主管應該怎麼做？", "options": null, "explanation": "", "answer": "拿出色差儀，以數據判定色差，避免主觀爭執"}]}</script>

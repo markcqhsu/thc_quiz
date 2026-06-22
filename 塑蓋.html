@@ -125,17 +125,20 @@ kbd{
   .card{padding:22px 18px;}
   .question{font-size:18px;}
 }
+.home-btn{display:flex;align-items:center;justify-content:center;width:34px;height:34px;border-radius:10px;border:1.5px solid var(--line);color:var(--muted);text-decoration:none;font-size:18px;transition:border-color .15s,color .15s,background .15s;flex:none;}
+.home-btn:hover{border-color:var(--accent);color:var(--accent);background:var(--chip);}
 </style>
 </head>
 <body>
 <div class="wrap">
   <header class="top">
+    <a class="home-btn" href="index.html" title="回首頁">&#8592;</a>
     <div class="title" id="quizTitle">塑蓋題庫練習</div>
     <div class="counter" id="counter"></div>
   </header>
   <div class="bar"><i id="barFill"></i></div>
   <div id="stage"></div>
-  <div class="footer">互動題庫練習 ｜ 主動回想模式</div>
+  <div class="footer">互動題庫練習 ｜ 主動回想模式 ｜ v1.1</div>
 </div>
 
 <script id="quizData" type="application/json">{"title": "塑蓋題庫練習", "questions": [{"id": 1, "type": "qa", "question": "塑蓋的成型方式共分為哪兩種？", "options": null, "explanation": "", "answer": "射出、壓模"}, {"id": 2, "type": "qa", "question": "1881BAP塑蓋用於何種產品？", "options": null, "explanation": "", "answer": "水、無菌冷充產品"}, {"id": 3, "type": "qa", "question": "1810BPKS塑蓋名稱中的KS各分別代表什麼？", "options": null, "explanation": "", "answer": "KIRIN、SUNSTORY"}, {"id": 4, "type": "qa", "question": "單片塑蓋及雙片內墊蓋保存期限各為何？", "options": null, "explanation": "", "answer": "單片塑蓋一年、雙片內墊蓋六個月"}, {"id": 5, "type": "qa", "question": "單片壓模塑蓋基本製造生產流程為何？", "options": null, "explanation": "", "answer": "壓模、整型、切割、視檢、成品"}, {"id": 6, "type": "qa", "question": "38mmKBPV塑蓋名稱中的K代表何種意思？", "options": null, "explanation": "", "answer": "K為卡齒設計"}, {"id": 7, "type": "qa", "question": "常溫、無菌充填、熱充填、冷充填，依據塑蓋編碼原則各為何種代號？", "options": null, "explanation": "", "answer": "常溫、無菌充填為A；熱充填為H；冷充填為C"}, {"id": 8, "type": "qa", "question": "1810BPSJ塑蓋具有何種特殊設計？", "options": null, "explanation": "", "answer": "連結設計"}, {"id": 9, "type": "qa", "question": "1810BU塑蓋為壓模蓋還是射出蓋？", "options": null, "explanation": "", "answer": "射出"}, {"id": 10, "type": "qa", "question": "任意舉出塑蓋六種部位名稱。", "options": null, "explanation": "", "answer": "天面、止滑條、螺牙起始點、強化環、架橋點、防盜環、頂封環、耐壓環、長凸、螺牙、葉片（任舉六種）"}, {"id": 11, "type": "qa", "question": "28mm 1881塑蓋，開啟扭力規範為何？", "options": null, "explanation": "", "answer": "八至二十kgf-cm"}, {"id": 12, "type": "qa", "question": "3025塑蓋，S.S.T.密封性測試標準為何？", "options": null, "explanation": "", "answer": "100psi持續一分鐘不洩漏"}, {"id": 13, "type": "tf", "question": "鋼球撞擊測試後，瓶蓋無破裂但有洩漏，請問是否合格？", "options": null, "explanation": "", "answer": true}, {"id": 14, "type": "qa", "question": "耐候測試必須放置恆溫環境下多少天？", "options": null, "explanation": "", "answer": "三十天"}, {"id": 15, "type": "qa", "question": "跌落測試前樣品需置於何種環境？長達多久？", "options": null, "explanation": "", "answer": "冷藏七加減三度的環境中保存二十四小時"}, {"id": 16, "type": "qa", "question": "G.V.保持性試驗用於測試何種產品？", "options": null, "explanation": "", "answer": "碳酸產品"}, {"id": 17, "type": "qa", "question": "塑蓋全尺寸量測需量測哪些尺寸？", "options": null, "explanation": "", "answer": "外徑、螺牙內徑、長凸外徑、螺牙根徑、高度、防盜環外徑、重量、厚度"}, {"id": 18, "type": "qa", "question": "28mm 1810塑蓋逆栓扭力規範為何？", "options": null, "explanation": "", "answer": "大於三十kgf-cm"}, {"id": 19, "type": "qa", "question": "碳酸產品的洩漏角度與斷裂角度有何規範？", "options": null, "explanation": "", "answer": "洩漏角度需小於斷裂角度"}, {"id": 20, "type": "qa", "question": "耐候試驗的目的為何？", "options": null, "explanation": "", "answer": "確認材料於環境因素下的表現"}]}</script>
