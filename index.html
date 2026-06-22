@@ -25,15 +25,15 @@
   @media (max-width:560px){ .grid{grid-template-columns:1fr;} }
   a.card{
     display:block; background:var(--surface); border:1px solid var(--line);
-    border-radius:16px; padding:24px 22px; text-decoration:none; color:var(--ink);
+    border-radius:16px; overflow:hidden; text-decoration:none; color:var(--ink);
     transition:transform .15s, box-shadow .15s; position:relative;
   }
-  a.card:hover{ transform:translateY(-3px); box-shadow:0 8px 20px rgba(0,0,0,.08); }
-  .icon{
-    width:44px; height:44px; border-radius:12px; background:var(--chip);
-    display:flex; align-items:center; justify-content:center;
-    font-size:22px; margin-bottom:14px;
+  a.card:hover{ transform:translateY(-3px); box-shadow:0 8px 20px rgba(0,0,0,.10); }
+  .card-img{
+    width:100%; height:160px; object-fit:cover; display:block;
+    background:var(--chip);
   }
+  .card-body{padding:18px 20px 20px;}
   .card h2{margin:0 0 6px; font-size:19px;}
   .card .count{
     display:inline-block; margin-top:10px; font-size:13px; color:var(--accent);
@@ -51,28 +51,36 @@
     </header>
     <div class="grid">
       <a class="card" href="塑蓋.html">
-        <div class="icon">🧴</div>
-        <h2>塑蓋</h2>
-        <div class="desc">塑蓋規格、製程、扭力與密封性測試規範</div>
-        <span class="count">共20題（初級＋中級）</span>
+        <img class="card-img" src="images/塑蓋.jpg" alt="塑蓋">
+        <div class="card-body">
+          <h2>塑蓋</h2>
+          <div class="desc">塑蓋規格、製程、扭力與密封性測試規範</div>
+          <span class="count">共20題（初級＋中級）</span>
+        </div>
       </a>
       <a class="card" href="標籤.html">
-        <div class="icon">🏷️</div>
-        <h2>標籤</h2>
-        <div class="desc">標籤材質、印刷流程、收縮率與合掌強度測試</div>
-        <span class="count">共25題（初級＋中級）</span>
+        <img class="card-img" src="images/標籤.jpg" alt="標籤">
+        <div class="card-body">
+          <h2>標籤</h2>
+          <div class="desc">標籤材質、印刷流程、收縮率與合掌強度測試</div>
+          <span class="count">共25題（初級＋中級）</span>
+        </div>
       </a>
       <a class="card" href="鋁爪蓋.html">
-        <div class="icon">🔩</div>
-        <h2>鋁爪蓋</h2>
-        <div class="desc">爪蓋與鋁蓋規格、製程、內墊材料與原料實務</div>
-        <span class="count">共49題（初級＋中級＋原料實務）</span>
+        <img class="card-img" src="images/鋁爪蓋.jpg" alt="鋁爪蓋">
+        <div class="card-body">
+          <h2>鋁爪蓋</h2>
+          <div class="desc">爪蓋與鋁蓋規格、製程、內墊材料與原料實務</div>
+          <span class="count">共49題（初級＋中級＋原料實務）</span>
+        </div>
       </a>
       <a class="card" href="PET.html">
-        <div class="icon">🧪</div>
-        <h2>PET</h2>
-        <div class="desc">PET原料特性、瓶身規格、品保測試與射出吹瓶製程</div>
-        <span class="count">共30題（初級＋中級＋高級）</span>
+        <img class="card-img" src="images/PET.jpg" alt="PET瓶胚">
+        <div class="card-body">
+          <h2>PET</h2>
+          <div class="desc">PET原料特性、瓶身規格、品保測試與射出吹瓶製程</div>
+          <span class="count">共30題（初級＋中級＋高級）</span>
+        </div>
       </a>
     </div>
     <footer>每份練習頁皆可離線開啟、自包含、支援自評與重練 ｜ v1.1</footer>
