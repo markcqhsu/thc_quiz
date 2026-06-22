@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>考前練習：選擇範圍</title>
+<style>
+  :root{
+    --bg:#f4f1ea; --surface:#ffffff; --ink:#23201c; --muted:#8a857c;
+    --accent:#b5462f; --accent-ink:#ffffff; --line:#e3ddd2; --chip:#efe9dd;
+  }
+  *{box-sizing:border-box;}
+  body{
+    margin:0; min-height:100vh; background:var(--bg); color:var(--ink);
+    font-family:"Noto Sans TC","PingFang TC","Microsoft JhengHei",sans-serif;
+    display:flex; align-items:center; justify-content:center; padding:40px 20px;
+  }
+  .wrap{max-width:780px; width:100%;}
+  header{text-align:center; margin-bottom:36px;}
+  h1{font-size:28px; margin:0 0 8px;}
+  p.sub{color:var(--muted); margin:0; font-size:15px;}
+  .grid{
+    display:grid; grid-template-columns:1fr 1fr; gap:18px;
+  }
+  @media (max-width:560px){ .grid{grid-template-columns:1fr;} }
+  a.card{
+    display:block; background:var(--surface); border:1px solid var(--line);
+    border-radius:16px; padding:24px 22px; text-decoration:none; color:var(--ink);
+    transition:transform .15s, box-shadow .15s; position:relative;
+  }
+  a.card:hover{ transform:translateY(-3px); box-shadow:0 8px 20px rgba(0,0,0,.08); }
+  .icon{
+    width:44px; height:44px; border-radius:12px; background:var(--chip);
+    display:flex; align-items:center; justify-content:center;
+    font-size:22px; margin-bottom:14px;
+  }
+  .card h2{margin:0 0 6px; font-size:19px;}
+  .card .count{
+    display:inline-block; margin-top:10px; font-size:13px; color:var(--accent);
+    background:var(--chip); padding:3px 10px; border-radius:999px;
+  }
+  .card .desc{color:var(--muted); font-size:13.5px; margin-top:6px; line-height:1.5;}
+  footer{text-align:center; margin-top:32px; color:var(--muted); font-size:12.5px;}
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <h1>考前練習</h1>
+      <p class="sub">請選擇要練習的範圍，點下卡片即可進入該範圍的互動練習頁</p>
+    </header>
+    <div class="grid">
+      <a class="card" href="塑蓋.html">
+        <div class="icon">🧴</div>
+        <h2>塑蓋</h2>
+        <div class="desc">塑蓋規格、製程、扭力與密封性測試規範</div>
+        <span class="count">共20題（初級＋中級）</span>
+      </a>
+      <a class="card" href="標籤.html">
+        <div class="icon">🏷️</div>
+        <h2>標籤</h2>
+        <div class="desc">標籤材質、印刷流程、收縮率與合掌強度測試</div>
+        <span class="count">共25題（初級＋中級）</span>
+      </a>
+      <a class="card" href="鋁爪蓋.html">
+        <div class="icon">🔩</div>
+        <h2>鋁爪蓋</h2>
+        <div class="desc">爪蓋與鋁蓋規格、製程、內墊材料與原料實務</div>
+        <span class="count">共49題（初級＋中級＋原料實務）</span>
+      </a>
+      <a class="card" href="PET.html">
+        <div class="icon">🧪</div>
+        <h2>PET</h2>
+        <div class="desc">PET原料特性、瓶身規格、品保測試與射出吹瓶製程</div>
+        <span class="count">共30題（初級＋中級＋高級）</span>
+      </a>
+    </div>
+    <footer>每份練習頁皆可離線開啟、自包含、支援自評與重練</footer>
+  </div>
+</body>
+</html>
